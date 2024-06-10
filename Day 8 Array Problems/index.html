@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        // 1. Declare one basic array in javascript.
+
+        // way one 
+        // let a = [1,2,3,4];
+        // for(let i of a)
+        // {
+        //     document.write(i);
+        // }
+
+        // way 2
+
+        // let a = new Array(2,3);
+        // for(let i of a)
+        // {
+        //     document.write(i);
+        // }
+
+        // 3. Create an blanked array of size 5 in JavaScript and then add some items.
+
+        // let array = new Array(5);
+        // array[0]=1;
+        // array[1]=2;
+        // array[2]=3;
+        // array[3]=4;
+        // array[4]=5;
+        // for(let i of array)
+        // {
+        //     document.write(i);
+        // }
+
+        //5. How do I check if an Array includes a value in JavaScript? using for loop and inside this if condition.
+        
+        // let array = [1,2,3,4,5];
+        // let element = 4;
+        // let i;
+        // for( i=0; i<array.length; i++)
+        // {
+        //     if(array[i]==element)
+        //     {
+        //         document.write(element+ " is present in array at "+(i+1)+ " position");
+        //         break;
+        //     }
+        // }
+        // if(i==array.length)
+        // {
+        //     document.write("perticular element is not in array");
+        // }
+
+        //8. JavaScript Program to Swap First and Last Elements in an Array
+         
+        //  let a = [1,2,3,4];
+        //  let b = a[0];
+        //  a[0] = a[a.length-1];
+        //  a[a.length-1]=b;
+        //  document.write(a);
+
+       // 9. Declare one array and printed that array in bulleted list.
+
+    //    let a = [1,2,3,4,5];
+    //    document.write("<ul>");
+    //     for(let i=0; i<a.length; i++)
+    //     {
+    //         document.write("<li>" + a[i]+ "</li>");
+    //     }      
+    //     document.write("</ul>");
+
+       // 10. Declare one array and printed that array elements in increasing order of their numbers.
+
+        //  let array = [4,2,6,1,6,3];
+        //  for(let i=0; i<array.length; i++)
+        //  {
+        //     for(let j=i+1; j<array.length; j++)
+        //     {
+        //         let swap;
+        //         if(array[i]>array[j])
+        //         {
+        //             swap = array[i];
+        //             array[i] = array[j];
+        //             array[j] = swap;
+        //         }
+        //     }
+        //  }
+        //  document.write(array);
+
+    //  12. Write a JavaScript program to find the maximum number in an array.
+
+    // let arr = [1,2,5,43,7];
+    // let maxEle=0;
+    // for(let i=0; i<arr.length; i++)
+    // {
+    //    if(arr[i]>maxEle)
+    //    {
+    //     maxEle = arr[i];
+    //    } 
+    // }
+    // document.write("max element of array is = "+ maxEle);
+
+    // output = max element of array is = 43
+
+     //  13. Write a JavaScript program to find the minimum number in an array.
+    
+    // let arr = [1,2,5,43,7,0];
+    // let minEle =arr[0];
+    // for(let i=0; i<arr.length; i++)
+    // {
+    //    if(arr[i]<minEle)
+    //    {
+    //     minEle = arr[i];
+    //    } 
+    // }
+    // document.write("min element of array is = "+ minEle);
+
+   // output = min element of array is = 0
+
+  // 14. Write a JavaScript function to check if a given string is a palindrome (reads the same forwards and backwards). 
+
+//   let str= "121";
+//   let newStr="";
+//   for(let i = str.length-1; i>=0; i--)
+//   {
+//     newStr += str[i];
+//   }
+ 
+//   if(str === newStr)
+//   {
+//     document.write("String is palindrome");
+//   }
+//   else{
+//     document.write("string is not palindrome");
+//   }
+
+//Output : String is palindrome
+
+//15. Write a JavaScript function that takes an array of numbers and returns a new array with only the even numbers. 
+
+// let arr = [1,2,4,5,3,6,4];
+// let newArr = [];
+// let count =0;
+// for(let i=0; i<arr.length; i++)
+// {
+//     if(arr[i]%2==0)
+//     {
+//         newArr[count] = arr[i];
+//         count++; 
+//     }
+// }
+// document.write(newArr);
+
+
+// 17. Implement a function that takes two arrays and merges them into a single array.
+
+// let arr1 = [1,2];
+// let arr2 = [3,4];
+// let arr3 = arr1.concat(arr2);
+// document.write(arr3);
+
+//18. How do you find the duplicate number on a given integer array? and find out the count of their repetations.
+
+// let arr = [1,2,3,1,2,1];
+// count = 0;
+// let num = 2;
+// for(let i=0; i<arr.length; i++)
+// {
+//     if(arr[i]==num)
+//     {
+//         count++;
+//     }
+// }
+
+// document.write("The number "+num+ " repeated " +count+" times in array");
+
+
+//19. How do you remove duplicates from an array in place?
+
+// let arr = [1,2,3,1,35,3,5,5,5];
+// for(let i =0; i<arr.length; i++)
+// {
+//     for(let j=i+1; j<arr.length; j++)
+//     {
+//         if(arr[i]==arr[j])
+//         {
+//             //arr[j]= null; //it only remove value not whole index
+//             // arr.splice(j,1); // it remove whole index with value
+//         }
+//     }
+// }
+// document.write(arr);
+
+
+//20. Given an array of integers sorted in ascending order.
+
+// let arr = [1,4,3,7,4,5];
+// for(let i=0; i<arr.length; i++)
+// {
+//     for(let j=i+1; j<arr.length; j++)
+//     {
+//         if(arr[i]>arr[j])
+//         {
+//             let swape = arr[i];
+//             arr[i] = arr[j];
+//             arr[j] =swape;
+//         }
+//     }
+// }
+
+// document.write(arr);
+
+// way 2 
+ 
+// let arr = [1,5,3,7,4];
+
+// arr.sort(function(a,b){return a-b});
+//     document.write(arr);   
+
+
+// 22. Given an array of integers and find out the average of the array.
+
+// let arr = [1,2,3,5];
+// let avg=0;
+// let count=0;
+// for(let i=0; i<arr.length; i++)
+// {
+//     avg += arr[i];
+//     count++;
+// }
+// document.write("avarage of array number is = " + (avg/count));
+    </script>
+</body>
+</html>
